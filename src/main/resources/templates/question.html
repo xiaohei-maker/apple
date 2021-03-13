@@ -115,11 +115,7 @@
                             <div th:text="${comment.content}"></div>
                             <div class="menu">
 
-                                <span th:if="${session.user != null}"
-                                        onclick="collapseLikes(this)" class="comment-icon">
-                                    <span class="glyphicon glyphicon-thumbs-up icon"></span>
-                                </span>
-
+                               
                                 <span class="glyphicon glyphicon-thumbs-up icon"></span>
 
                                 <span th:data-id="${comment.id}"
