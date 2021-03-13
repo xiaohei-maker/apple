@@ -53,9 +53,6 @@
                             <a th:href="@{'/notification/'+ ${notification.id}}"
                                th:text="${notification.outerTitle}">
                             </a>
-<!--                            <a th:href="@{'/notification/'+ ${notification.id}}"-->
-<!--                               th:text="${notification.notifierName +' ' +notification.type + ' '+notification.outerTitle}">-->
-<!--                            </a>-->
                             <span class="label label-danger" th:if="${notification.status == 0}">未读</span>
                         </p>
                     </div>

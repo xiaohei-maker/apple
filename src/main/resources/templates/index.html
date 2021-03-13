@@ -39,6 +39,7 @@
             <div class="media" th:each="question : ${pagination.data}">
                 <div class="media-left">
                     <a href="#">
+                        <!--/*@thymesVar id="user" type=""*/-->
                         <img class="media-object img-rounded"
                              th:src="${question.user.avatarUrl}">
                     </a>
@@ -47,7 +48,8 @@
                     <h4 class="media-heading">
                         <a th:href="@{'/question/'+ ${question.id}}" th:text="${question.title}"></a>
                     </h4>
-                    <span class="text-desc"><span th:text="${question.commentCount}"></span> 个回复 • <span
+                    <span class="text-desc"><span th:text="${question.commentCount}"></span> 个回复 • <!--/*@thymesVar id="viewCount" type=""*/-->
+                    <span
                             th:text="${question.viewCount}"></span> 次浏览 • <span
                             th:text="${#dates.format(question.gmtCreate,'yyyy-MM-dd HH:mm')}"></span></span>
                 </div>
@@ -86,7 +88,7 @@
             </nav>
         </div>
         <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
-
+            <div th:insert="~{notice :: notice}"></div>
             <!--相关问题-->
             <hr class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -94,7 +96,31 @@
                 <a th:each="tag : ${tags}" th:href="@{/(page=1,search=${search},tag=${tag},sort=${sort})}"
                    th:text="${tag}" class="community-tag"></a>
             </div>
-
+            <div th:fragment="side">
+                <hr class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 side"
+                     th:if="${#lists.size(#httpServletRequest.getServletContext().getAttribute('SIDE')) != 0}"
+                     th:each="ad : ${#httpServletRequest.getServletContext().getAttribute('SIDE')}">
+                    <a th:href="${ad.url}" th:onclick="clickSide([[${ad.title}]])"
+                       target="_blank">
+                        <img class="img-thumbnail question-wechat" th:src="${ad.image}">
+                    </a>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 side"
+                     th:if="${#lists.size(#httpServletRequest.getServletContext().getAttribute('SIDE')) == 0}">
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <!-- 侧边栏广告位 -->
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-9804684553882114"
+                         data-ad-slot="2615744269"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+            </div>
         </div>
     </div>
 </div>

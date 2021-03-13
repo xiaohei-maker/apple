@@ -3,6 +3,17 @@
  */
 
 /**
+ * 点赞评论
+ */
+function collapseLikes(content) {
+    if (!content) {
+        alert("不能回复空内容~~~");
+        return;
+    }
+}
+
+
+/**
  * 提交回复
  */
 function post() {

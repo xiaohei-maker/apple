@@ -1,30 +1,20 @@
-2021-02-17 20:18:01.245  INFO 12912 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 1.8.0_221 on DESKTOP-8LLDCBD with PID 12912 (C:\Users\xiaohei\Desktop\dem\target\classes started by xiaohei in C:\Users\xiaohei\Desktop\dem)
-2021-02-17 20:18:01.252  INFO 12912 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
-2021-02-17 20:18:01.335  WARN 12912 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2021-02-17 20:18:02.265  INFO 12912 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
-2021-02-17 20:18:02.272  INFO 12912 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-02-17 20:18:02.273  INFO 12912 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-02-17 20:18:02.367  INFO 12912 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-02-17 20:18:02.368  INFO 12912 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1057 ms
-2021-02-17 20:18:02.464  INFO 12912 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2021-02-17 20:18:02.557  INFO 12912 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2021-02-17 20:18:02.900  INFO 12912 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-02-17 20:18:03.007  INFO 12912 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2021-02-17 20:18:03.126  INFO 12912 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
-2021-02-17 20:18:03.161  INFO 12912 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
-2021-02-17 20:18:03.170  INFO 12912 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 2.351 seconds (JVM running for 3.209)
-2021-02-17 20:23:42.534  INFO 12320 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 1.8.0_221 on DESKTOP-8LLDCBD with PID 12320 (C:\Users\xiaohei\Desktop\dem\target\classes started by xiaohei in C:\Users\xiaohei\Desktop\dem)
-2021-02-17 20:23:42.536  INFO 12320 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
-2021-02-17 20:23:42.586  WARN 12320 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2021-02-17 20:23:43.518  INFO 12320 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
-2021-02-17 20:23:43.534  INFO 12320 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-02-17 20:23:43.534  INFO 12320 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-02-17 20:23:43.646  INFO 12320 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-02-17 20:23:43.646  INFO 12320 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1079 ms
-2021-02-17 20:23:43.758  INFO 12320 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2021-02-17 20:23:43.840  INFO 12320 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2021-02-17 20:23:44.152  INFO 12320 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-02-17 20:23:44.251  INFO 12320 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2021-02-17 20:23:44.359  INFO 12320 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
-2021-02-17 20:23:44.393  INFO 12320 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
-2021-02-17 20:23:44.403  INFO 12320 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 2.2 seconds (JVM running for 3.031)
+2021-03-13 15:10:37.959  INFO 10472 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 1.8.0_221 on DESKTOP-8LLDCBD with PID 10472 (C:\Users\xiaohei\Desktop\dem\target\classes started by xiaohei in C:\Users\xiaohei\Desktop\dem)
+2021-03-13 15:10:37.966  INFO 10472 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2021-03-13 15:10:38.051  WARN 10472 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2021-03-13 15:10:39.071  INFO 10472 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2021-03-13 15:10:39.080  INFO 10472 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-13 15:10:39.080  INFO 10472 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-03-13 15:10:39.194  INFO 10472 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-13 15:10:39.195  INFO 10472 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1174 ms
+2021-03-13 15:10:39.308  INFO 10472 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-03-13 15:10:39.430  INFO 10472 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-03-13 15:10:39.830  INFO 10472 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-13 15:10:39.944  INFO 10472 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-03-13 15:10:40.075  INFO 10472 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-03-13 15:10:40.111  INFO 10472 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2021-03-13 15:10:40.118  INFO 10472 --- [scheduling-1] com.example.demo.schedule.HotTagTasks    : hotTagSchedule start Sat Mar 13 15:10:40 CST 2021
+2021-03-13 15:10:40.120  INFO 10472 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 2.596 seconds (JVM running for 6.18)
+2021-03-13 15:10:40.531  INFO 10472 --- [scheduling-1] com.example.demo.schedule.HotTagTasks    : hotTagSchedule stop Sat Mar 13 15:10:40 CST 2021
+2021-03-13 15:11:09.426  INFO 10472 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-13 15:11:09.426  INFO 10472 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-03-13 15:11:09.427  INFO 10472 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
