@@ -37,9 +37,11 @@ public class SessionInterceptor implements HandlerInterceptor {
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
 
         request.getServletContext().setAttribute("redirectUri", redirectUri);
-        for (AdPosEnum adPos : AdPosEnum.values()) {
-            request.getServletContext().setAttribute(adPos.name(), adService.list(adPos.name()));
-        }
+//         for (AdPosEnum adPos : AdPosEnum.values()) {
+//             request.getServletContext().setAttribute(adPos.name(), adService.list(adPos.name()));
+//         }
+          HttpSession session = request.getSession();
+        session.setAttribute("ads",adService.list());
         Cookie[] cookies = request.getCookies();
         if (cookies != null && cookies.length != 0)
             for (Cookie cookie : cookies) {
@@ -50,7 +52,7 @@ public class SessionInterceptor implements HandlerInterceptor {
                             .andTokenEqualTo(token);
                     List<User> users = userMapper.selectByExample(userExample);
                     if (users.size() != 0) {
-                        HttpSession session = request.getSession();
+                      
                         session.setAttribute("user", users.get(0));
                         Long unreadCount = notificationService.unreadCount(users.get(0).getId());
                         session.setAttribute("unreadCount", unreadCount);
